@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transient Graffiti</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+        }
+        img {
+            max-width: 80vw;
+            max-height: 80vh;
+            border: 4px solid white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transient Graffiti</h1>
+    <img id="graffitiImage" src="images/art1.jpg" alt="Art of the Moment">
+    <script>
+        // Optional: Add a rotating image list
+        const images = ["images/art1.jpg", "images/art2.jpg", "images/art3.jpg"];
+        const chosen = images[Math.floor(Math.random() * images.length)];
+        document.getElementById("graffitiImage").src = chosen;
+    </script>
+</body>
+</html>
